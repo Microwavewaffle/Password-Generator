@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Karla:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="icon-img">
+            <img id="icon" src="theme/moon.png" alt="theme">
+        </div>
+        <div class="main">
+            <h1 class="header">
+                Generate a <br><span id="green">random password</span></br>
+            </h1>
+            <p class="statment">
+                Never use an insecure password again.
+            </p>
+            <div id=main-event>
+                <button onclick="generatePassword()" id="generate-btn" class="generate-btn">
+                        Generate passwords
+                </button>   
+            </div>
+        </div>
+        <div class="passwords">
+            <div class="password-el">
+                <p id="p1""></p>
+            </div>
+            <div class="password-el">
+                <p id="p2"></p>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
