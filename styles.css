@@ -163,4 +163,49 @@ body {
 
 
 
+@media  only screen and (max-width: 390px) {
+    .container {
+        width: 330px;
+        height: 330px;
+        
+    }
 
+    body {
+        position: fixed;
+        margin-left: 190px;
+    }
+
+    .header {
+        width: 200px;
+        height: 50px;
+        margin-left: 30px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+
+    .statment {
+        width: 200px;
+        height: 20px;
+        margin-left: 30px;
+        margin-top: 0;
+        font-size: 10px;
+    }
+
+    .generate-btn {
+        width: 100px;
+        height: 30px;
+        margin-left: 30px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 10px;
+    }
+
+    .password-el {
+        width: 100px;
+        height: 30px;
+        font-size: 10px;
+    }
+    
+
+
+}
