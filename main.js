@@ -48,7 +48,7 @@ console.log(generatePassword(10, true, true, true, true));
 
 
 generateBtn.addEventListener("click", function() {
-    const length = 5;
+    const length = 15;
     const hasNumbers = true;
     const hasSymbols = true;
     const hasLowercase = true;
