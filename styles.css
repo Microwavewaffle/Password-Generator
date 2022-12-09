@@ -5,6 +5,7 @@
 }
 
 
+
 .dark-theme {
     --background-color: #1c1c1c;
     --container-color: #1f2937;
@@ -161,6 +162,29 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+#gen-button {
+    display: inline-flex;
+}
+
+#checkboxes {
+    display: inline-flex;
+    width: 290px;
+    height: 50px;
+    margin: 0;
+    margin-left: 52px;
+    accent-color: var(--green1-color);
+    color: var(--statment-color);
+}
+
+#main-event {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+}
+
 
 
 @media  only screen and (max-width: 390px) {
@@ -201,11 +225,28 @@ body {
     }
 
     .password-el {
-        width: 100px;
+        width: 130px;
         height: 30px;
         font-size: 10px;
+        
     }
     
+    #checkboxes {
+        width: 200px;
+        height: 30px;
+        margin-left: 30px;
+        font-size: 10px;
+        
+    }
 
+    input {
+        width: 7px;
+        height: 7px;
+    }
+
+    .passwords {
+        width: 270px;
+        margin-left: 30px;
+    }
 
 }

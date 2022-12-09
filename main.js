@@ -14,6 +14,12 @@ let generateBtn = document.getElementById('generate-btn')
 let passwordOne = document.getElementById('p1')
 let passwordTwo = document.getElementById('p2')
 
+// select symbols checkbox
+let symbolsEl = document.querySelector('.symbols')
+console.log(symbolsEl)
+
+
+
 
 
 const uppercase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"]
@@ -25,10 +31,12 @@ const symbols = ["~","`","!","@","#","$","%","^","&","*","(",")","_","-","+","="
 
 const generatePassword = (length, hasNumbers, hasSymbols, hasLowercase, hasUppercase) => {
     const availableCharacters = [
-        ...(hasSymbols ? symbols : []),
-        ...(hasNumbers ? numbers : []),
-        ...(hasUppercase ? uppercase : []),
-        ...(hasLowercase ? lowercase : [])
+         ...(hasSymbols ? symbols : []),
+         ...(hasNumbers ? numbers : []),
+         ...(hasUppercase ? uppercase : []),
+         ...(hasLowercase ? lowercase : [])
+
+        
     ];
 
     let password = '';
@@ -46,11 +54,30 @@ const generatePassword = (length, hasNumbers, hasSymbols, hasLowercase, hasUpper
 
 console.log(generatePassword(10, true, true, true, true));
 
+// if symbols checkbox is checked make symbolsEl true
+symbolsEl.addEventListener('click', function() {
+    if (symbolsEl.checked) {
+        symbolsEl = true;
+    } else {
+        symbolsEl = false;
+    }
+
+    
+
+
+    console.log(symbolsEl)
+})
+
+
 
 generateBtn.addEventListener("click", function() {
+    
+    
+    
+
     const length = 15;
     const hasNumbers = true;
-    const hasSymbols = true;
+    const hasSymbols = symbolsEl;
     const hasLowercase = true;
     const hasUppercase = true;
 
@@ -59,3 +86,7 @@ generateBtn.addEventListener("click", function() {
 }
 
 )
+
+
+
+
