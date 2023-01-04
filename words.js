@@ -10,6 +10,24 @@ icon.onclick = function() {
     }
 }
 
+//color picker
+const root = document.querySelector(":root"),
+    inputs = document.querySelectorAll("input[name='theme']");
+
+for(const input of inputs) {
+    input.onchange = e => {
+        root.style.setProperty("--theme-color", `var(--${e.target.value})`)
+    }
+}
+
+
+
+// for(const input of inputs) {
+//     input.onchange = e => {
+//         root.style.setProperty("--theme-color", `var(--${value})`)
+//     }
+
+//generate
 let generateBtn = document.getElementById('generate-btn')
 let passwordOne = document.getElementById('p1')
 let passwordTwo = document.getElementById('p2')
