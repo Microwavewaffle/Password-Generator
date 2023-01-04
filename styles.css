@@ -21,8 +21,8 @@
     --blue: rgb(30, 136, 229);
     --indigo: rgb(57, 73, 171);
     --violet: rgb(156, 39, 176);
+    --white: #ffffff;
 
-    --theme-color: var(--green);
 }
 
 :root {
@@ -35,11 +35,12 @@
     --button-color: #ffffff;
     --green: #10b981;
     --red: rgb(229, 57, 53);
-    --yellow: rgb(253, 216, 53);
+    --yellow: rgb(233, 195, 27);
     --orange: rgb(251, 140, 0);
     --blue: rgb(30, 136, 229);
     --indigo: rgb(57, 73, 171);
     --violet: rgb(156, 39, 176);
+    --white: #ffffff;
 
 
     --theme-color: var(--green);
@@ -71,10 +72,28 @@ body {
     width: 250px;
     display: flex;
     justify-content: space-between;
+    margin-left: 53px;
 }
 
 input[type="radio"] {
     width: 17px;
+    
+}
+
+input[type="radio"]:after {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background-color: var(--background-color);
+    border: 1px solid var(--white);
+    transition: .15s;
+    margin-top: 7px;
+}
+
+input[type="radio"]:checked:after{
+    background-color: var(--theme-color);
 }
 
 #top {
