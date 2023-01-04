@@ -281,9 +281,14 @@ input[type="radio"]:checked:after{
         
     }
 
-    input {
-        width: 7px;
-        height: 7px;
+    #theme-picker-section {
+        width: 200px;
+        margin-left: 25px;
+    }
+
+    input[type="radio"] {
+        width: 2px;
+        
     }
 
     .passwords {
